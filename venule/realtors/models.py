@@ -10,5 +10,5 @@ class Realtors(models.Model):
     is_mvp=models.BooleanField(default=False)
     hire_date=models.DateTimeField(default=datetime.now,blank=True)
     ## just like Listings we need to have a main field which needs to be displayed 
-    def __str__(self) -> str:
+    def _str_(self):
         return self.name
